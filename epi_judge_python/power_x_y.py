@@ -2,7 +2,6 @@ from test_framework import generic_test
 
 
 def power(x, y):
-    # TODO - you fill in here.
     return 0.0
 
 

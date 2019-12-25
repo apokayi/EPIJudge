@@ -7,8 +7,13 @@ from test_framework.test_utils import enable_executor_hook
 
 
 def even_odd(A):
-    # TODO - you fill in here.
-    return
+    lastEven_index, firstOdd_index = 0, len(A) - 1
+    while lastEven_index < firstOdd_index:
+        if A[lastEven_index] % 2 == 0:
+            lastEven_index += 1
+        else:
+            A[lastEven_index], A[firstOdd_index] = A[firstOdd_index], A[lastEven_index]
+            firstOdd_index -= 1
 
 
 @enable_executor_hook
